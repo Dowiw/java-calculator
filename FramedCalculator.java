@@ -24,6 +24,12 @@ public class FramedCalculator implements ActionListener {
         frame.setSize(420, 550);
         frame.setLayout(null);
 
+        textfield = new JTextField();
+        textfield.setBounds(50, 25, 300, 50);
+        textfield.setFont(myFont);
+        textfield.setEditable(false);
+
+        frame.add(textfield);
         frame.setVisible(true);
     }
 
