@@ -38,7 +38,6 @@ public class FramedCalculator implements ActionListener {
         delButton = new JButton("Delete");
         clrButton = new JButton("Clear");
 
-
         functionButtons[0] = addButton;
         functionButtons[1] = subButton;
         functionButtons[2] = mulButton;
@@ -64,8 +63,12 @@ public class FramedCalculator implements ActionListener {
         delButton.setBounds(50, 430, 145, 50);
         clrButton.setBounds(205, 430, 145, 50);
 
-        
+        panel = new JPanel();
+        panel.setBounds(50, 100, 300,300);
+        panel.setLayout(new GridLayout(4,4,10,10));
+        panel.setBackground(Color.GRAY);
 
+        frame.add(panel);
         frame.add(delButton);
         frame.add(clrButton);
         frame.add(textfield);
